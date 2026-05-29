@@ -16,11 +16,11 @@ Publication-style survival visualizations
 
 Technologies
 
-R
-survival
-survminer
-tidyverse
-ggplot2
+R:
+survival/
+survminer/
+tidyverse/
+ggplot2/
 
 Key Results
 
