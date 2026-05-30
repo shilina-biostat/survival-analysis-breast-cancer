@@ -28,7 +28,7 @@ This project explores survival outcomes among breast cancer patients from the TC
 ## Dataset
 
 The analysis was performed using the TCGA-BRCA (The Cancer Genome Atlas Breast Cancer) clinical dataset containing survival outcomes and clinical characteristics of 1,063 breast cancer patients.
-Source: TCGA-BRCA clinical data obtained from Kaggle.
+Source: [TCGA-BRCA clinical dataset on Kaggle](https://www.kaggle.com/datasets/jmalagontorres/tcga-brca-survival-analysis)
 
 ## Key Results
 
