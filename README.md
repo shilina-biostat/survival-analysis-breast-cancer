@@ -1,38 +1,51 @@
-Survival Analysis of Breast Cancer Patients Using Cox Proportional Hazards Models in R
-Objective
+# Survival Analysis of Breast Cancer Patients Using Cox Proportional Hazards Models in R
+## Objective
 
 This project explores survival outcomes among breast cancer patients from the TCGA-BRCA dataset using Kaplan–Meier estimation and Cox proportional hazards regression models.
 
-Methods
+## Methods
 
-Exploratory Data Analysis (EDA)
-Missing data inspection
-Kaplan–Meier survival curves
-Log-rank test
-Cox proportional hazards regression
-Hazard ratio interpretation
-Proportional hazards assumption testing
-Publication-style survival visualizations
+- Exploratory Data Analysis (EDA)
+- Missing data inspection
+- Kaplan–Meier survival curves
+- Log-rank test
+- Cox proportional hazards regression
+- Hazard ratio interpretation
+- Proportional hazards assumption testing
+- Publication-style survival visualizations
 
-Technologies
 
-R:
-survival/
-survminer/
-tidyverse/
-ggplot2/
+## Technologies
 
-Key Results
+- R
+- survival
+- survminer
+- tidyverse
+- ggplot2
 
-Increasing age at diagnosis was significantly associated with increased mortality risk.
-Lymph node examined count was associated with poorer survival outcomes.
-Radiation therapy status was not significantly associated with overall survival after covariate adjustment.
-The proportional hazards assumption was satisfied for all covariates.
 
-Repository Structure
+## Dataset
+
+The analysis was performed using the TCGA-BRCA (The Cancer Genome Atlas Breast Cancer) clinical dataset containing survival outcomes and clinical characteristics of 1,063 breast cancer patients.
+
+
+## Key Results
+
+- Age at diagnosis was significantly associated with increased mortality risk (HR = 1.04, p < 0.001).
+- Lymph node examined count was associated with poorer survival outcomes (HR = 1.02, p = 0.024).
+- Radiation therapy status was not significantly associated with overall survival after covariate adjustment (HR = 0.99, p = 0.96).
+- No violations of the proportional hazards assumption were detected (global test p = 0.75).
+
+
+## Repository Structure
 
 scripts/
+├── 01_data_cleaning.R
+├── 02_kaplan_meier.R
+└── 03_cox_model.R
+
 outputs/
-data/
+└── figures/
+
 README.md
 
