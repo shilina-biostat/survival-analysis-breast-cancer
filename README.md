@@ -17,7 +17,7 @@ This project explores survival outcomes among breast cancer patients from the TC
 - Publication-style survival visualizations
 
 ## Technologies
-...
+
 * R
 * survival
 * survminer
