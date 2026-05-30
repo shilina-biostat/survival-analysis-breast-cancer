@@ -65,6 +65,33 @@ Output figures will be saved to `outputs/figures/`.
 * Radiation therapy status was not significantly associated with overall survival after covariate adjustment (HR = 0.99, p = 0.96).
 * No violations of the proportional hazards assumption were detected (global test p = 0.75).
 
+## Variable Description
+
+| Variable | Description |
+|---|---|
+| `bcr_patient_barcode` | Unique patient identifier (TCGA barcode) |
+| `Time` / `Time_years` | Survival time in days / years |
+| `status` | Outcome: 1 = death, 0 = censored |
+| `vital_status` | Raw vital status from TCGA (Dead/Alive) |
+| `age_at_initial_pathologic_diagnosis` | Age at diagnosis (years) |
+| `lymph_node_examined_count` | Number of lymph nodes examined |
+| `radiation_therapy_NO` | Indicator: patient did NOT receive radiation therapy |
+| `breast_carcinoma_surgical_procedure_name_*` | Type of surgery (Lumpectomy / Simple Mastectomy / Other) |
+| `menopause_status_*` | Menopausal status at diagnosis |
+| `pathologic_T_*` | Tumour size/extent (T1, T3, T4, TX) |
+| `pathologic_N_*` | Regional lymph node involvement (N1–N3, NX) |
+| `pathologic_M_*` | Distant metastasis status (M1, MX) |
+| `pathologic_stage_*` | Overall pathologic stage (I, III, IV, X) |
+| `tissue_prospective_collection_indicator_YES` | Whether tissue was collected prospectively |
+
+## Limitations
+
+- The dataset is observational; causal conclusions cannot be drawn.
+- Survival time is right-censored and may introduce bias if censoring is non-random.
+- Binary indicator variables were created via one-hot encoding; reference categories are implicit.
+- The Cox model included only age and lymph node count; other clinical variables were available but excluded due to analytical scope.
+- Results are specific to the TCGA-BRCA cohort and may not generalise to other populations.
+
 ## Kaplan–Meier Survival Curve
 
 ![KM Plot](outputs/figures/km_plot.png)
