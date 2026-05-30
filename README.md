@@ -89,7 +89,7 @@ Output figures will be saved to `outputs/figures/`.
 - The dataset is observational; causal conclusions cannot be drawn.
 - Survival time is right-censored and may introduce bias if censoring is non-random.
 - Binary indicator variables were created via one-hot encoding; reference categories are implicit.
-- The Cox model included only age and lymph node count; other clinical variables were available but excluded due to analytical scope.
+- The Cox model included age, radiation therapy status, and lymph node count; additional clinical variables were available but were not included in the final model.
 - Results are specific to the TCGA-BRCA cohort and may not generalise to other populations.
 
 ## Kaplan–Meier Survival Curve
