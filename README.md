@@ -6,14 +6,14 @@ This project explores survival outcomes among breast cancer patients from the TC
 
 ## Methods
 
-* Exploratory Data Analysis (EDA)
-* Missing data inspection
-* Kaplan–Meier survival curves
-* Log-rank test
-* Cox proportional hazards regression
-* Hazard ratio interpretation
-* Proportional hazards assumption testing
-* Publication-style survival visualizations
+- Exploratory Data Analysis (EDA)
+- Missing data inspection
+- Kaplan–Meier survival curves
+- Log-rank test
+- Cox proportional hazards regression
+- Hazard ratio interpretation
+- Proportional hazards assumption testing
+- Publication-style survival visualizations
 
 ## Technologies
 
@@ -26,6 +26,7 @@ This project explores survival outcomes among breast cancer patients from the TC
 ## Dataset
 
 The analysis was performed using the TCGA-BRCA (The Cancer Genome Atlas Breast Cancer) clinical dataset containing survival outcomes and clinical characteristics of 1,063 breast cancer patients.
+Source: TCGA-BRCA clinical data obtained from Kaggle.
 
 ## Key Results
 
@@ -47,3 +48,10 @@ outputs/
 
 README.md
 ```
+## Kaplan–Meier Survival Curve
+
+![KM Plot](outputs/figures/km_plot.png)
+
+## Cox Model Forest Plot
+
+![Forest Plot](outputs/figures/forest_plot.png)
