@@ -30,6 +30,34 @@ This project explores survival outcomes among breast cancer patients from the TC
 The analysis was performed using the TCGA-BRCA (The Cancer Genome Atlas Breast Cancer) clinical dataset containing survival outcomes and clinical characteristics of 1,063 breast cancer patients.
 Source: [TCGA-BRCA clinical dataset on Kaggle](https://www.kaggle.com/datasets/jmalagontorres/tcga-brca-survival-analysis)
 
+## How to Run
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/shilina-biostat/survival-analysis-breast-cancer.git
+cd survival-analysis-breast-cancer
+```
+
+### 2. Download the dataset
+Download the TCGA-BRCA clinical dataset from [Kaggle](https://www.kaggle.com/datasets/jmalagontorres/tcga-brca-survival-analysis) and place the CSV file in the `data/` folder:
+```
+data/
+└── clinical_data(labels).csv
+```
+
+### 3. Install required R packages
+```r
+install.packages(c("survival", "survminer", "tidyverse", "ggplot2"))
+```
+
+### 4. Run the scripts in order
+```r
+source("scripts/01_data_cleaning.R")
+source("scripts/02_kaplan_meier.R")
+source("scripts/03_cox_model.R")
+```
+Output figures will be saved to `outputs/figures/`.
+
 ## Key Results
 
 * Age at diagnosis was significantly associated with increased mortality risk (HR = 1.04, p < 0.001).
