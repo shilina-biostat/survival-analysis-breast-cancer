@@ -1,12 +1,12 @@
 # Survival Analysis of Breast Cancer Patients Using Cox Proportional Hazards Models in R
 
 ## Objective
-...
+
 This project explores survival outcomes among breast cancer patients from the TCGA-BRCA dataset using Kaplan–Meier estimation and Cox proportional hazards regression models.
 
 
 ## Methods
-...
+
 - Exploratory Data Analysis (EDA)
 - Missing data inspection
 - Kaplan–Meier survival curves
@@ -26,12 +26,12 @@ This project explores survival outcomes among breast cancer patients from the TC
 
 
 ## Dataset
-...
+
 The analysis was performed using the TCGA-BRCA (The Cancer Genome Atlas Breast Cancer) clinical dataset containing survival outcomes and clinical characteristics of 1,063 breast cancer patients.
 Source: TCGA-BRCA clinical data obtained from Kaggle.
 
 ## Key Results
-...
+
 * Age at diagnosis was significantly associated with increased mortality risk (HR = 1.04, p < 0.001).
 * Lymph node examined count was associated with poorer survival outcomes (HR = 1.02, p = 0.024).
 * Radiation therapy status was not significantly associated with overall survival after covariate adjustment (HR = 0.99, p = 0.96).
@@ -46,7 +46,7 @@ Source: TCGA-BRCA clinical data obtained from Kaggle.
 ![Forest Plot](outputs/figures/forest_plot.png)
 
 ## Repository Structure
-...
+
 ```text
 scripts/
 ├── 01_data_cleaning.R
